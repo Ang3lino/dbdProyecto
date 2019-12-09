@@ -2,7 +2,7 @@
 import os 
 
 table_names = []
-with open('db.sql') as fp:
+with open('../sql/db.sql') as fp:
     table_names = [line.split()[2] for line in fp if 'TABLE' in line]
 print(table_names)
 for name in table_names:

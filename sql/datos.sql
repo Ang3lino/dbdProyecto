@@ -137,6 +137,7 @@ BEGIN
 END;
 /
 
+ALTER session set NLS_DATE_FORMAT='DD/MM/YYYY';
 --       INSERT_ESTUDIANTE_MATERIA ----------------------------------
 BEGIN 
    insert_estudiante_materia('C101', '18-12-2016', 'ORD',	9, '2013631540');

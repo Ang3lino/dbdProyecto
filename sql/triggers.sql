@@ -1,3 +1,8 @@
+-- vsids11.si.ehu.es
+-- GIPUZKOA
+-- https://stackoverflow.com/questions/16963730/problems-creating-a-trigger-in-oracle-11g
+
+
 -- Definicion de disparadores
 -- Consistencia en el aumento del guia
 CREATE OR REPLACE TRIGGER t_guia_aumento_porcentaje 
@@ -39,6 +44,7 @@ BEGIN
   END IF;
 END;
 /
+
 
 -- Los guias tendran al menos 18 anios de edad
 CREATE OR REPLACE TRIGGER t_guia_edad 
